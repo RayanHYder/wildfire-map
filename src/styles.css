@@ -1,0 +1,264 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #f7f7fb;
+  color: #b8c1ec;
+  background-image: url("https://images.pexels.com/photos/2305169/pexels-photo-2305169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  margin-right: 2px;
+}
+.sidenav {
+  min-width: 200px !important;
+  width: 10vw !important;
+  max-width: 400px !important;
+  background-color: white;
+  float: left;
+  /* position: fixed; */
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 30%;
+  height: 0;
+  max-width: 50%;
+  max-height: 100%;
+  margin-bottom: 250px;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px double black;
+
+  /* width: 50%;
+  height: 100%; */
+  /* margin-bottom: 25px; */
+}
+small {
+  position: absolute;
+  z-index: 40;
+  bottom: 0;
+  margin-bottom: 15px;
+}
+.dashboard {
+  padding: 15px;
+  position: relative;
+}
+
+.graph-container {
+  float: left;
+  width: 65%;
+}
+
+.image-link-macro,
+.image-link-macro img {
+  display: block;
+  width: 100%;
+}
+.image-link-macro {
+  position: auto;
+  text-decoration: none;
+  height: 100%;
+}
+img {
+  width: relative;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+.package {
+  position: relative;
+  padding: var(--padding, 15px);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: var(--pa, flex-start);
+  color: var(--tc);
+  --hf: var(--serif);
+  --hw: 400;
+  --ht: none;
+  --ld: none;
+  --lhd: underline;
+  --lhc: var(--tc);
+}
+.package > :first-child {
+  margin-top: 0;
+}
+
+.package > * {
+  margin: var(--ps, 10px) 0 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.cardOne {
+  position: relative;
+  background-color: var(--paper-color, #fff);
+  box-shadow: var(--paper-shadow);
+  width: 50%;
+  height: 50%;
+  flex: 1 1 300px;
+  margin: 50px;
+}
+.cardTwo {
+  position: relative;
+  background-color: var(--paper-color, #fff);
+  box-shadow: var(--paper-shadow);
+  width: 50%;
+  height: 50%;
+  flex: 1 1 300px;
+  margin: 50px;
+}
+
+.byline,
+.kicker {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.kicker {
+  padding: 5px 8px;
+  font-weight: 400;
+  color: var(--tc, #222);
+  border: 0.5px solid var(--tc, #222);
+  border-radius: 2px;
+  --lhc: var(--tc, #222);
+  --ld: none;
+  --lhd: none;
+}
+.h6,
+h6 {
+  font-size: 0.75rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--hf);
+  font-weight: var(--hw);
+  text-transform: var(--ht);
+  line-height: 1.2em;
+  color: rgb(133, 75, 25);
+}
+/* .h1,
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.1em;
+  --hw: 700;
+} */
+#space {
+  visibility: hidden;
+}
+/* figure {
+  position: relative;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+} */
+.figure,
+figure {
+  margin: 0;
+  flex: none;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+.h3,
+h3 {
+  font-size: larger;
+}
+
+a {
+  color: var(--lc);
+  /* -webkit-text-decoration: var(--ld); */
+  text-decoration: var(--ld);
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+
+/* .flex-columns .main-stage {
+  flex: 2 1 660px;
+  align-self: flex-start;
+} */
+.flex-columns > .flex-columns {
+  margin: 0;
+}
+.tweets {
+  padding-top: 100px;
+}
+/* .flex-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+} */
+.button {
+  align-self: unset;
+  background-color: #5169b8;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.4em 1em;
+  box-sizing: border-box;
+  border-radius: 2px;
+  --ld: none;
+  --lhd: none;
+  font: 700 medium var(--sans);
+  border: 1px solid transparent;
+}
+.button.impact {
+  color: #fff;
+}
+.d-tablet {
+  display: block;
+}
+.signin {
+  position: relative;
+  justify-content: flex-end;
+  z-index: 3;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:link {
+  text-decoration: none;
+}
+.flex a:hover,
+a:active {
+  background-color: red;
+  text-decoration: none;
+}
